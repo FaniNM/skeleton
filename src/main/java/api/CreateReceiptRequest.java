@@ -18,3 +18,4 @@ public class CreateReceiptRequest {
 
     public BigDecimal amount;
 }
+

@@ -5,5 +5,16 @@ CREATE TABLE receipts (
   amount DECIMAL(12,2),
   receipt_type INT UNSIGNED,
 
+
   PRIMARY KEY (id)
+);
+
+
+CREATE TABLE tags (
+  ReceiptId INT UNSIGNED,
+  uploaded TIME DEFAULT CURRENT_TIME(),
+  tag VARCHAR(255),
+
+
+  PRIMARY KEY (ReceiptId, tag)
 );

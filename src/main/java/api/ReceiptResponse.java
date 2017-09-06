@@ -3,6 +3,7 @@ package api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import generated.tables.records.ReceiptsRecord;
 
+
 import java.math.BigDecimal;
 import java.sql.Time;
 
@@ -35,3 +36,4 @@ public class ReceiptResponse {
         this.id = dbRecord.getId();
     }
 }
+
